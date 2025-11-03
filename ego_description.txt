@@ -1,5 +1,8 @@
 Fully customize your OSD ( On Screen Display ) pop ups like Volume , Brightness or Caffeine , Lock Keys etc. 
 
+UPDATE (v26, v27):
+- Mark compatible with GNOME Shell 47
+
 UPDATE (v25, v26):
 - Profiles: New default profiles added for new users to get started
 - Vertical Position: Please note vertical position convention is changed: +50 is Top and -50 is Bottom of screen
@@ -12,7 +15,7 @@ UPDATE (v25, v26):
 - Padding: New horizontal and vertical padding options
 - Shadow: New shadow color option
 - Font: Improved implementation of font attributes (font style, stretch, weight)
-- Trigger custom OSDs from command line (e.g. from a script) (see ReadMe on Github: https://github.com/neuromorph/custom-osd?tab=readme-ov-file#trigger-custom-osds-from-command-line)
+- Trigger custom OSDs from command line (e.g. from a script) (see ReadMe on Github: https://github.com/wyrmiyu/custom-osd?tab=readme-ov-file#trigger-custom-osds-from-command-line)
 
 Progress Ring / Disk:
 - Select Sepcial Effect 'Progress Ring' in settings

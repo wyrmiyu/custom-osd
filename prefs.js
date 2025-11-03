@@ -279,7 +279,7 @@ export default class CustomOSDPreferences extends ExtensionPreferences {
     })
     const presetGithubBtn = new Gtk.LinkButton({
       label: _("Github"),
-      uri: "https://github.com/neuromorph/custom-osd/tree/main/presets",
+      uri: "https://github.com/wyrmiyu/custom-osd/tree/main/presets",
     });
     presetProfRow.add_suffix(presetGithubBtn);
     presetProfsGroup.add(presetProfRow);
@@ -634,7 +634,7 @@ export default class CustomOSDPreferences extends ExtensionPreferences {
     });
     const issuesBtn = new Gtk.Button({label: '🔗↗', valign: Gtk.Align.CENTER,});
     issueRow.add_suffix(issuesBtn);
-    let issueLink = "https://github.com/neuromorph/custom-osd/issues";
+    let issueLink = "https://github.com/wyrmiyu/custom-osd/issues";
     issuesBtn.connect('clicked', () => {
       Gtk.show_uri(window, issueLink, Gdk.CURRENT_TIME);
     });
@@ -646,7 +646,7 @@ export default class CustomOSDPreferences extends ExtensionPreferences {
     });
     const translateBtn = new Gtk.Button({label: '🔗↗', valign: Gtk.Align.CENTER,});
     translateRow.add_suffix(translateBtn);
-    let translateLink = "https://github.com/neuromorph/custom-osd#translations";
+    let translateLink = "https://github.com/wyrmiyu/custom-osd#translations";
     translateBtn.connect('clicked', () => {
       Gtk.show_uri(window, translateLink, Gdk.CURRENT_TIME);
     });
@@ -688,7 +688,7 @@ export default class CustomOSDPreferences extends ExtensionPreferences {
     });
     const starBtn = new Gtk.LinkButton({
       child: starLabel,
-      uri: "https://github.com/neuromorph/custom-osd",
+      uri: "https://github.com/wyrmiyu/custom-osd",
       margin_end: 180,
       tooltip_text: _("Star the project on GitHub"),
       height_request: 50,

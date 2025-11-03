@@ -3,7 +3,7 @@
 
 
 A GNOME Shell extension allowing the user to customize the On Screen Display (OSD) pop ups on Gnome. You can set the **Geometry** (position, orientation, size, shape), **Style** (font, colors, shadow, transparency, background effects etc.) and **Beyond**: Set the delay of the OSD pop-ups and optionally display % value for OSDs with levels like Volume/Brightness etc. You can choose to display the OSD on Primary/ External or both the monitors and select what components to show. In summary, fully transform the OSD pop-ups to match your theme and liking!  
-The new update allows to create and save multiple Settings profiles and choose one to apply. The profiles can be imported / exported to files. Profiles Presets (exported to file), [available here](https://github.com/neuromorph/custom-osd/tree/main/presets), can help as starter pack. Also, if you would like to share your settings profiles, do raise a PR or issue.
+The new update allows to create and save multiple Settings profiles and choose one to apply. The profiles can be imported / exported to files. Profiles Presets (exported to file), [available here](https://github.com/wyrmiyu/custom-osd/tree/main/presets), can help as starter pack. Also, if you would like to share your settings profiles, do raise a PR or issue.
 
 <p align="center">
 <img src="screens/CustomOSDs.png" width="400">
@@ -23,8 +23,8 @@ the _Extension Manager_ app.
 ### How to manually install the extension (if needed)?
 
 ```
-git clone https://github.com/neuromorph/custom-osd.git \
-	~/.local/share/gnome-shell/extensions/custom-osd@neuromorph
+git clone https://github.com/wyrmiyu/custom-osd.git \
+	~/.local/share/gnome-shell/extensions/custom-osd@wyrmiyu
 ```
 OR download the release zip file (may not be latest) and unzip at location: ~/.local/share/gnome-shell/extensions/
 
@@ -92,13 +92,13 @@ If you want to skip an optional param, leave it blank, keep the commas. If icon 
 
 Example command:
 ```
-GSETTINGS_SCHEMA_DIR=$HOME/.local/share/gnome-shell/extensions/custom-osd@neuromorph/schemas gsettings set org.gnome.shell.extensions.custom-osd showosd "$RANDOM,preferences-system-time-symbolic,My OSD,0.75"
+GSETTINGS_SCHEMA_DIR=$HOME/.local/share/gnome-shell/extensions/custom-osd@wyrmiyu/schemas gsettings set org.gnome.shell.extensions.custom-osd showosd "$RANDOM,preferences-system-time-symbolic,My OSD,0.75"
 ```
 
 ## Translations
 
 [Gettext](https://www.gnu.org/software/gettext/) is a localization framework for writing multi-lingual applications that is also used by GNOME Shell extensions.  
-This extension provides a [template file](po/custom-osd@neuromorph.pot) (.pot) that contains a list of all the translatable strings in this project. Translators can use this template to create a (.po) translation file (e.g. fr.po for French).
+This extension provides a [template file](po/custom-osd@wyrmiyu.pot) (.pot) that contains a list of all the translatable strings in this project. Translators can use this template to create a (.po) translation file (e.g. fr.po for French).
 
 Translators can use tools like [Gtranslator](https://flathub.org/apps/details/org.gnome.Gtranslator) or [POEdit](https://flathub.org/apps/details/net.poedit.Poedit) or any other online tools to work with the .pot files and create a .po for your language. 
 
@@ -145,5 +145,5 @@ Note: There is a lot of text here (check the .pot file) esp. due to the Help tab
 ## Acknowledgements
 
 - This extension started from [Better OSD](https://extensions.gnome.org/extension/1345/better-osd/) and its Gnome 40 [update](https://extensions.gnome.org/extension/4231/better-osd-gnome-40/). Better OSD became obsolete and forked versions also do not support new OSD modifications in GNOME shell after GNOME 41+. Custom-OSD began with porting the old extension to new GNOME mods so I could continue to use it locally. Eventually, I decided to put it out in case it is helpful to others as well. It soon found many users and many new feature requests as well, so I ended up rewriting the entire code for refinements/bug-fix/refactor and many new features. Nevertheless, Better OSD served as the inspiration and starter code and was an OSD lifesaver back in the days, many thanks to them!
-- Also thanks to users who appreciated the project, raised issues and requested new features here and on Gnome Extensions website. In particualr, [RedBearAK](https://github.com/RedBearAK) thoroughly reviewed the extension revisions and suggested [many ideas](https://github.com/neuromorph/custom-osd/issues/3) (most have been incorporated). Much appreciated!
+- Also thanks to users who appreciated the project, raised issues and requested new features here and on Gnome Extensions website. In particualr, [RedBearAK](https://github.com/RedBearAK) thoroughly reviewed the extension revisions and suggested [many ideas](https://github.com/wyrmiyu/custom-osd/issues/3) (most have been incorporated). Much appreciated!
 
